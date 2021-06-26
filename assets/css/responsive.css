@@ -1,0 +1,362 @@
+@media (max-width: 1400px) {
+    #nav-wrapper .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    #nav-wrapper ul li:before {
+        right: -10px;
+    }
+    #nav-wrapper ul li:after {
+        right: -20px;
+    }
+    #nav-wrapper ul li {
+        padding: 0 10px;
+    }
+    #nav-wrapper ul li a {
+        font-size: 14px;
+    }
+}
+@media (max-width: 1200px) {
+    #home-box {
+        padding: 65px 0 70px 0;
+        background-size: cover;
+        min-height: auto;
+    }
+    .container {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+    .tabs__caption {
+
+        justify-content: space-around;
+    }
+    .tabs__caption li {
+        font-size: 16px;
+        line-height: 22px;
+        padding: 20px 20px;
+        margin-right: 20px;
+    }
+    #services .select-box {
+        display: grid;
+        grid-template-columns: 350px auto;
+        grid-column-gap: 110px;
+    }
+    #services .radio-qus-box {
+        display: grid;
+        grid-template-columns: 350px auto;
+        grid-column-gap: 110px;
+    }
+    .tabs__content .box {
+        padding: 18px 20px 62px 20px;
+    }
+    #services .about-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #services .about-box .item {
+        text-align: center;
+        padding: 0 25px 15px 25px;
+    }
+    #services .about-box .item p {
+        width: 50%;
+        margin: 0 auto;
+    }
+    #services .box.about .subtitle {
+        width: 70%;
+        max-width: 100%;
+    }
+}
+@media (max-width: 1024px) {
+    .container{
+        padding: 0 30px;
+        max-width: 100%;
+    }
+    #home-box {
+        padding: 60px 0 55px 0;
+    }
+    #home-box .home-title {
+        font-size: 30px;
+        line-height: 38px;
+        margin-bottom: 10px;
+    }
+    #home-box p {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+    #services .select-box {
+        grid-template-columns: 1fr;
+    }
+    .select.first .select__head, .select.first .select__item {
+        max-width: 100%;
+    }
+    #services .radio-qus-box {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .tabs__caption li{
+        text-align: center;
+    }
+    .tabs__content .box .title-box .subtitle {
+
+        margin: 0 auto 26px auto;
+    }
+    #services {
+        padding: 40px 0 50px 0;
+    }
+    .section-title{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    #services .box.about .subtitle {
+        width: 85%;
+        max-width: 100%;
+    }
+    #services .about-box {
+        grid-template-columns: 1fr;
+    }
+    .select{
+        border-bottom: none;
+        position: relative;
+        padding: 23px 0;
+    }
+    #services .radio-qus-box .wrap{
+        position: relative;
+        padding: 23px 0;
+    }
+    #services .radio-qus-box .wrap.first{
+        padding-bottom: 23px;
+        border-bottom: none;
+    }
+    #services .radio-qus-box {
+
+        padding: 0;
+    }
+    .select-box.two .select {
+        border-bottom: none;
+        padding-bottom: 23px;
+    }
+    .select__list {
+
+        top: 77px;
+    }
+    .select:after,
+    #services .radio-qus-box .wrap:after{
+        content: "";
+        width: 70%;
+        height: 1px;
+        background: #EDEDED;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 767px) {
+    .container{
+        padding: 0 15px;
+    }
+    .section-title {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .slick-track {
+        height: 25px!important;
+    }
+    #nav-wrapper ul li:before,
+    #nav-wrapper ul li:after{
+        display: none;
+    }
+    #nav-wrapper ul li a {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    #home-box{
+        background: url("../img/Rectangle 3 (1).png")no-repeat;
+        background-size: cover;
+        padding: 42px 0 256px 0;
+        position: relative;
+        text-align: center;
+    }
+    #home-box .home-title {
+        font-size: 32px;
+        line-height: 32px;
+    }
+    #home-box .home-title span{
+        font-size: 24px;
+    }
+    #home-box p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 23px;
+    }
+    #home-box .button-blue {
+        width: 220px;
+        padding: 0 25px;
+        text-align: center;
+    }
+    .tabs__content .box .title-box .title {
+        margin-bottom: 16px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .tabs__caption li {
+        font-size: 11px;
+        line-height: 13px;
+        padding: 15px 5px;
+        margin-right: 8px;
+    }
+    .tabs__content .box .title-box .subtitle {
+        margin: 0 auto 8px auto;
+        font-size: 14px;
+        line-height: 18px;
+        padding: 8px 13px;
+        max-width: 60%;
+    }
+    #services .box.about .subtitle {
+        width: 100%;
+        max-width: 100%;
+    }
+    #services .input-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 4px;
+    }
+    #services .radio-qus-box .wrap.second .input-wrap {
+        display: flex;
+        grid-column-gap: 4px;
+        grid-row-gap: 8px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #services .input_box {
+        height: 48px;
+        max-width: 132px;
+        width: 50%;
+    }
+    #services .input_box:nth-child(3) {
+        height: 48px;
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+
+        justify-content: center;
+    }
+    #services .box-title {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 20px;
+        text-align: center
+    }
+    #services input.radio_input:checked + label, #services input.radio_input:not(:checked) + label {
+        padding: 16px 10px 16px 32px;
+    }
+    #services input.radio_input:checked + label:before, #services input.radio_input:not(:checked) + label:before {
+        top: 17px;
+    }
+    #services input.radio_input:checked + label:after, #services input.radio_input:not(:checked) + label:after {
+
+        top: 20px;
+    }
+    .tabs__content .box {
+        padding: 24px 10px 40px 10px;
+    }
+    .select__head {
+        height: 72px;
+        padding: 0 49px 0 22px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .select__list .select__item {
+        height: 72px;
+        padding: 0 30px 0 23px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .select__list {
+        top: 92px;
+    }
+    #services .btn-wrap {
+        flex-direction: column;
+        margin-top: 24px;
+    }
+    .input-white {
+        width: 100%;
+        height: 56px;
+        font-size: 14px;
+        margin-right: 0;
+        background: #F1F1F1;
+        border: 1px solid #EDEDED;
+        color: #000000;
+        margin-bottom: 16px;
+    }
+    .input-white::placeholder{
+        color: #000000;
+    }
+    .button-blue{
+        margin: 0 auto;
+    }
+    .button-blue {
+        width: 220px;
+        padding: 0 25px;
+        height: 64px;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    #services .about-box .item p {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    #services .about-box .item:after {
+        left: 0;
+        right: 0;
+        top: auto;
+        bottom: 0;
+        width: 70%;
+        margin: 0 auto;
+        height: 1px;
+        background: #EDEDED;
+        position: absolute;
+    }
+    #services .about-box .item:nth-child(4):after{
+        display: block;
+    }
+    #services .about-box .item:nth-child(1),
+    #services .about-box .item:nth-child(2),
+    #services .about-box .item:nth-child(3),
+    #services .about-box .item:nth-child(4){
+        padding: 19px 0 19px 0;
+    }
+    #services .about-box .item:nth-child(1) img {
+        width: 111px;
+        height: 90px;
+    }
+    #services .about-box .item:nth-child(2) img {
+        width: 149px;
+        height: 120px;
+    }
+    #services .about-box .item:nth-child(3) img {
+        width: 99px;
+        height: 97px;
+    }
+    #services .about-box .item:nth-child(4) img {
+        width: 131px;
+        height: 96px;
+    }
+    #services .box.about {
+        padding: 18px 15px 46px 15px;
+    }
+    #services .about-subtitle {
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 18px
+    }
+    #nav-wrapper {
+        display: none;
+    }
+}
