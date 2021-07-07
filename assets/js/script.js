@@ -1,35 +1,35 @@
-jQuery( function($) {
-    var handle = $( ".myCustom-handle span" );
-    var inputSend = $( ".sliderRangeInputArea" );
-    $( ".sliderRange-js" ).slider({
+jQuery(function ($) {
+    var handle = $(".myCustom-handle span");
+    var inputSend = $(".sliderRangeInputArea");
+    $(".sliderRange-js").slider({
         range: 'min',
         min: 0,
-        value:25,
+        value: 25,
         max: 120,
 
-        slide: function( event, ui ) {
+        slide: function (event, ui) {
             handle.html(ui.value + "<b>м<sup>2</sup></b>");//передали значение в нужный нам блок span
             handle.addClass('active')
             inputSend.val(ui.value); //передали значение в нужный нам input для отправки на почту
         }
     });
-} );
-jQuery( function($) {
-    var handleTwo = $( ".myCustom-handle-two span" );
-    var inputSendTwo = $( ".sliderRangeInputAreaTwo" );
-    $( ".sliderRange-js-two" ).slider({
+});
+jQuery(function ($) {
+    var handleTwo = $(".myCustom-handle-two span");
+    var inputSendTwo = $(".sliderRangeInputAreaTwo");
+    $(".sliderRange-js-two").slider({
         range: 'min',
         min: 1,
-        value:6,
+        value: 6,
         max: 20,
 
-        slide: function( event, ui ) {
+        slide: function (event, ui) {
             handleTwo.html(ui.value);//передали значение в нужный нам блок span
 
             inputSendTwo.val(ui.value); //передали значение в нужный нам input для отправки на почту
         }
     });
-} );
+});
 
 
 $('.nav__menu').slick({
@@ -43,21 +43,21 @@ $('.nav__menu').slick({
             settings: "unslick"
         },
         {
-            breakpoint:1024,
+            breakpoint: 1024,
             settings: "slick"
         },
         {
             breakpoint: 767,
             settings: {
-                slidesToShow: 1.5   ,
+                slidesToShow: 1.5,
             }
         },
     ]
 });
 
-(function($) {
-    $(function() {
-        $("ul.tabs__caption").on("click", "li:not(.active)", function() {
+(function ($) {
+    $(function () {
+        $("ul.tabs__caption").on("click", "li:not(.active)", function () {
             $(this)
                 .addClass("active")
                 .siblings()
