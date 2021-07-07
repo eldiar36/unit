@@ -6,6 +6,15 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Автовыкуп 2021</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+          integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+          integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+          integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+          crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -57,7 +66,6 @@
                     <li>Оценка квартиры для продажи</li>
                 </ul>
                 <div class="tabs__content active ">
-
                             <div class="box">
                                 <div class="title-box">
                                    <div class="title">
@@ -82,6 +90,38 @@
                                         <div class="select__list" style="display: none;">
                                             <div class="select__item"> район 1</div>
                                             <div class="select__item"> район 2</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="range-box">
+                                    <div class="wrap first">
+                                        <div class="box-title">Укажите площадь квартиры</div>
+                                        <div class="mySliderRange__block">
+                                            <div class="mySliderRange sliderRange-js ">
+                                                <div class="myCustom-handle ui-slider-handle">
+                                                    <span>25 м2</span>
+                                                </div>
+                                            </div>
+                                            <div class="mySliderRange__grid">
+                                                <span>10 м2</span><span>120 м2</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile_input">
+                                            <input type="text" id="inp2" placeholder="25 м2">
+                                            <label for="inp2">Введите значение вручную</label>
+                                        </div>
+                                    </div>
+                                    <div class="wrap second">
+                                        <div class="box-title">На каком этаже находится квартира?</div>
+                                        <div class="mySliderRange__block-two">
+                                            <div class="mySliderRange sliderRange-js-two ">
+                                                <div class="myCustom-handle-two ui-slider-handle">
+                                                    <span>6</span>
+                                                </div>
+                                            </div>
+                                            <div class="mySliderRange__grid-two">
+                                                <span>1</span><span>20</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -171,7 +211,7 @@
                             Оставьте заявку сегодня, чтобы завтра сотни заинтересованных покупателей узнали о продаже Вашей квартиры
                         </div>
                         <div class="btn-wrap">
-                            <a href="#" class="button-blue">Оценить квартиру</a>
+                            <a href="#popup2" class="button-blue booking-popup">Оценить квартиру</a>
                         </div>
                     </div>
                 </div>
@@ -201,6 +241,38 @@
                                 <div class="select__list" style="display: none;">
                                     <div class="select__item"> район 1</div>
                                     <div class="select__item"> район 2</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="range-box">
+                            <div class="wrap first">
+                                <div class="box-title">Укажите площадь квартиры</div>
+                                <div class="mySliderRange__block">
+                                    <div class="mySliderRange sliderRange-js ">
+                                        <div class="myCustom-handle ui-slider-handle">
+                                            <span>25 м2</span>
+                                        </div>
+                                    </div>
+                                    <div class="mySliderRange__grid">
+                                        <span>10 м2</span><span>120 м2</span>
+                                    </div>
+                                </div>
+                                <div class="mobile_input">
+                                    <input type="text" id="inp3" placeholder="25 м2">
+                                    <label for="inp3">Введите значение вручную</label>
+                                </div>
+                            </div>
+                            <div class="wrap second">
+                                <div class="box-title">На каком этаже находится квартира?</div>
+                                <div class="mySliderRange__block-two">
+                                    <div class="mySliderRange sliderRange-js-two ">
+                                        <div class="myCustom-handle-two ui-slider-handle">
+                                            <span>6</span>
+                                        </div>
+                                    </div>
+                                    <div class="mySliderRange__grid-two">
+                                        <span>1</span><span>20</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -259,11 +331,31 @@
 <footer>
 
 </footer>
+<div id="popup2" class="white-popup-block mfp-hide">
+    <div class="section-title">заявка на помощь
+        в продаже квартиры</div>
+    <div class="popup-subtitle">В короткие сроки</div>
+    <div class="popup-body">
+        <div class="second-title">Заполните поля ниже</div>
+        <form action="">
+            <input type="text" class="input_popup" placeholder="Ваше имя">
+            <input type="text" class="input_popup" placeholder="Ваш номер телефона">
+            <button class="button-blue">Оставить заявку</button>
+        </form>
+    </div>
+    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+    <div class="after"></div>
+</div>
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
         crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+        integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+        integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
 <script src="assets/js/script.js"></script>
 </body>
 </html>

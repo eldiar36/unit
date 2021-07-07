@@ -548,6 +548,133 @@ main {
 #services .box.about .subtitle{
     width: 50%;
 }
+.main {
+    width: 60%;
+    margin: 14% auto;
+    position: relative;
+}
+.myCustom-handle,
+.myCustom-handle-two{
+    position: relative;
+}
+
+.mySliderRange.ui-widget-content,
+.mySliderRange.ui-widget-content-two{
+    border-radius: 4px;
+    background: #E5E5E5;
+    height: 7px;
+    position: relative;
+}
+
+.mySliderRange__block .ui-widget-content .myCustom-handle.ui-slider-handle
+{
+    position: relative;
+    background: #FFDDB6;
+    border-radius: 3px;
+    width: 12px;
+    height: 12px;
+    top: -3px;
+    z-index: 0;
+}
+.mySliderRange__block-two .ui-widget-content  .myCustom-handle-two.ui-slider-handle{
+    position: relative;
+    background: #85A1CC;
+    border-radius: 3px;
+    width: 12px;
+    height: 12px;
+    top: -3px;
+    z-index: 0;
+}
+.mySliderRange__block .myCustom-handle span.active,
+.mySliderRange__block-two .myCustom-handle span.active{
+    padding: 7px 13px 5px 0;
+}
+.mySliderRange__block .myCustom-handle span,
+.mySliderRange__block-two .myCustom-handle-two span{
+    position: absolute;
+    top: -33px;
+    left: 0;
+    width: 50px;
+    max-width: 50px;
+    padding: 7px 0 5px 0;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #000000;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.mySliderRange__block-two .myCustom-handle-two span{
+    width: 25px;
+}
+.range-box .wrap .mobile_input{
+    display: none;
+}
+.myCustom-handle b{
+    position: absolute;
+    top: -16px;
+    right: 8px;
+    font-weight: 400;
+    font-size: 12px;
+
+}
+.myCustom-handle-two b {
+    font-weight: 400!important;
+    line-height: 0;
+}
+.mySliderRange__block .ui-slider-range {
+    background: #FFDDB6!important;
+    /* position: relative; */
+    z-index: 10;
+    height: 7px;
+    position: absolute;
+    top: 0;
+}
+.mySliderRange__block-two .ui-slider-range{
+    z-index: 10;
+    height: 7px;
+    position: absolute;
+    top: 0;
+    background: #85A1CC!important;
+}
+/*.myCustom-handle.ui-state-active{
+    color: black!important;
+}*/
+.myCustom-handle sup{
+    line-height: 50px;
+    font-size: 10px
+}
+
+
+.mySliderRange__grid,
+.mySliderRange__grid-two{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.mySliderRange__grid span,
+.mySliderRange__grid-two span{
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+
+}
+.range-box{
+    position: relative;
+    display: grid;
+    grid-template-columns: 437px auto;
+    grid-column-gap: 193px;
+    margin: 25px 0 25px 0;
+}
+.range-box .box-title{
+    margin-bottom: 42px!important;
+    text-align: left!important;
+}
 #nav-wrapper .slick-prev,
 #nav-wrapper .slick-dots,
 #nav-wrapper .slick-next {
@@ -555,4 +682,72 @@ main {
 }
 .slick-slide{
     width: auto;!important;
+}
+.white-popup-block {
+    max-width: 440px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    border: 1px solid #F4F4F4;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(27, 82, 121, 0.08);
+    border-radius: 4px;
+    padding: 35px 46px 47px 46px;
+}
+.white-popup-block .section-title{
+    line-height: 36px;
+    padding: 0 20px;
+    font-size: 26px;
+}
+
+.white-popup-block .popup-subtitle{
+    width: 180px;
+    height: 29px;
+    background: #FFDDB6;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+    margin: 6px auto 45px auto;
+    padding: 0 20px;
+}
+.white-popup-block .popup-body .second-title{
+    font-family: 'Cormorant',sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 13px;
+    padding: 0 20px;
+}
+.white-popup-block .popup-body  .input_popup{
+    background: #FFFFFF;
+    border: 1px solid #EDEDED;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    padding: 0 10px;
+    height: 64px;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #000000;
+}
+.white-popup-block .popup-body  .input_popup::placeholder{
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #AFAFAF;
+}
+.white-popup-block .popup-body .button-blue{
+    margin: 44px auto 0 auto;
+    border: none;
+    cursor: pointer;
+}
+.mfp-close-btn-in .mfp-close {
+    color: #fff;
+    opacity: 1;
+    top: -40px;
+    right: -40px;
 }
